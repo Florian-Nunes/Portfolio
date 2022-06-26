@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #2f4269;
+    --secondary-color: #1c232e;
+    --thirdary-color: #676cdb;
+    --fourdary-color: #3aafc9;
+    --grey-color: #7c8188;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+  }
+  
+  header{
+    height: 70px;
+  }
+
+  .navbar .nav-link {
+    color: rgb(252, 252, 252) !important;
+    
+  }
+
+
+.footer{
+  height: 142px;
+}
+
+.navbar-nav {
+gap: 20px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.min-h-container{
+  min-height: calc(100vh - 307.88px);
+}
+
+.container img{
+  max-width: 100%;
+}
+.citation {
+  font-family: 'Dancing Script', cursive;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+

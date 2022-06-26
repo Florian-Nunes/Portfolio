@@ -1,0 +1,21 @@
+.container {
+    min-height: calc(100vh - 212px);
+    display: flex;
+    justify-content: center;
+}
+
+.container img{
+    height: 100%;
+    max-height: calc(100vh - 212px);
+}
+.Aboutme{
+    margin: auto;
+    color: beige;
+    max-width: 1300px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.letitre{
+    text-align: center;
+    margin-bottom: 20px;
+}
