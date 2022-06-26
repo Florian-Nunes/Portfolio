@@ -174,3 +174,6 @@ html .timeline-container .timeline-content article::before, body .timeline-conta
     border: 3px solid;
     transform: translateZ(-1px);
 }
+article {
+    width: 491px;
+  }
