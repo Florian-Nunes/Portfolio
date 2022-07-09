@@ -106,5 +106,6 @@
   border: 0px;
   border-radius: 4px;
 }
-.buttonCV{
+.btn-contact{
+  visibility: hidden
 }
