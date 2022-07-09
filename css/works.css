@@ -84,9 +84,9 @@
     -webkit-animation-delay: 2.8s;
     animation-delay: 2.8s;
 }
-.skills-bar-container li .bar-container #progress-angular {
-    -webkit-animation-name: progress-angular;
-    animation-name: progress-angular;
+.skills-bar-container li .bar-container #progress-python {
+    -webkit-animation-name: progress-python;
+    animation-name: progress-python;
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
 }
@@ -110,7 +110,7 @@
         width: 0%;
    }
     100% {
-        width: 100%;
+        width: 90%;
    }
 }
 @-webkit-keyframes progress-css {
@@ -118,7 +118,7 @@
         width: 0%;
    }
     100% {
-        width: 90%;
+        width: 85%;
    }
 }
 @-webkit-keyframes progress-javascript {
@@ -137,7 +137,7 @@
         width: 55%;
    }
 }
-@-webkit-keyframes progress-angular {
+@-webkit-keyframes progress-python {
     0% {
         width: 0%;
    }
@@ -145,6 +145,8 @@
         width: 65%;
    }
 }
+
+/* */
 @-moz-keyframes progress-html {
     0% {
         width: 0%;
@@ -177,7 +179,7 @@
         width: 55%;
    }
 }
-@-moz-keyframes progress-angular {
+@-moz-keyframes progress-python {
     0% {
         width: 0%;
    }
@@ -185,6 +187,8 @@
         width: 65%;
    }
 }
+
+/* */
 @keyframes progress-html {
     0% {
         width: 0%;
@@ -217,7 +221,7 @@
         width: 55%;
    }
 }
-@keyframes progress-angular {
+@keyframes progress-python {
     0% {
         width: 0%;
    }
