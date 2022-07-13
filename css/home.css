@@ -3,10 +3,9 @@
     display: flex;
     justify-content: center;
 }
-
 .container img{
     height: 100%;
-    max-height: calc(100vh - 212px);
+    max-height: calc(110vh - 212px);
 }
 .Aboutme{
     margin: auto;
