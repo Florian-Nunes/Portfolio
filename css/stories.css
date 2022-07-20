@@ -7,7 +7,7 @@ html h1, body h1 {
     font-size: calc(3rem * 10vw);
     position: relative;
     padding: 1rem 1.5rem;
-    background: #fff;
+    background: rgb(245,255,250);
     border: 3px solid;
     width: max-content;
     z-index: 1;
@@ -130,7 +130,7 @@ html .timeline-container .timeline-content span::before, body .timeline-containe
     width: 12px;
     height: 12px;
     border: 3px solid;
-    background: #fff;
+    background: rgb(245,255,250);
     left: calc(-2em - 6px);
     z-index: 2;
     border-radius: 20px;
@@ -146,7 +146,7 @@ html .timeline-container .timeline-content span::before, body .timeline-containe
 }
 html .timeline-container .timeline-content article, body .timeline-container .timeline-content article {
     margin-top: 1.5em;
-    background-color: #fff;
+    background-color: rgb(245,255,250);
     margin-bottom: 2em;
     position: relative;
     border: 3px solid;
