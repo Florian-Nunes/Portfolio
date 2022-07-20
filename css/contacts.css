@@ -34,13 +34,13 @@
   .box-icon{
     color: var(--fourdary-color);
     margin-right: 0.5em;
-    font-size: 25px;
+    font-size: 40px;
   }
 
-  .box-header h4{
-    color: white;
-    font-family: "Roboto-Bold";
+  .box-header h3{
+    color: #dcf8ec;
     font-size: 1.5rem;
+    margin-right: 20px;
   }
 
   .box-content{
@@ -108,4 +108,22 @@
 }
 .btn-contact{
   visibility: hidden
+}
+
+.content h3 {
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+
+.v8 h3 {
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(to right, #6d87bb, #3a91c9);
+  padding-bottom: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.v8:hover h3 {
+  background-size: 100% 100%;
 }
