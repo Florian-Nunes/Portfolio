@@ -8,14 +8,13 @@
 
 .skills-bar-container {
     position: relative;
-    width: 40%;
     min-width: 300px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     list-style: none;
-    margin-top: 300px;
+    width: 80%;
 }
 .skills-bar-container li {
     position: relative;
@@ -24,7 +23,7 @@
     margin-bottom: 10px;
 }
 .skills-bar-container li .progressbar-title {
-    color: #fff;
+    color: #dcf8ec;
 }
 .skills-bar-container li .progressbar-title h3 {
     display: inline-block;
@@ -90,6 +89,19 @@
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
 }
+.skills-container{
+    display: flex;
+}
+.skill-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-right{
+    width: 50%;
+}
+
 .progressred {
     background-color: #c0392b;
 }
