@@ -100,6 +100,19 @@
 }
 .skill-right{
     width: 50%;
+    margin-top: 2%;
+}
+
+.skill-left2{
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.skill-right2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .progressred {
