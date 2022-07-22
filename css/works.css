@@ -8,14 +8,13 @@
 
 .skills-bar-container {
     position: relative;
-    width: 40%;
     min-width: 300px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     list-style: none;
-    margin-top: 300px;
+    width: 80%;
 }
 .skills-bar-container li {
     position: relative;
@@ -24,7 +23,7 @@
     margin-bottom: 10px;
 }
 .skills-bar-container li .progressbar-title {
-    color: #fff;
+    color: #dcf8ec;
 }
 .skills-bar-container li .progressbar-title h3 {
     display: inline-block;
@@ -60,6 +59,38 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+/*Skillbar Networks*/
+.skills-bar-container li .bar-container #progress-centreon{
+    -webkit-animation-name: progress-centreon;
+    animation-name: progress-centreon;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.skills-bar-container li .bar-container #progress-cpt {
+    -webkit-animation-name: progress-cpt;
+    animation-name: progress-cpt;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.skills-bar-container li .bar-container #progress-wireshark {
+    -webkit-animation-name: progress-wireshark;
+    animation-name: progress-wireshark;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.skills-bar-container li .bar-container #progress-vpn {
+    -webkit-animation-name: progress-vpn;
+    animation-name: progress-vpn;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+.skills-bar-container li .bar-container #progress-powershell {
+    -webkit-animation-name: progress-powershell;
+    animation-name: progress-powershell;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+/*Skillbar Dev*/
 .skills-bar-container li .bar-container #progress-html {
     -webkit-animation-name: progress-html;
     animation-name: progress-html;
@@ -90,22 +121,88 @@
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
 }
-.progressred {
-    background-color: #c0392b;
+/**/
+.skills-container{
+    display: flex;
 }
+.skill-left{
+    width: 45%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.skill-right{
+    width: 45%;
+    margin-top: 2%;
+}
+
+.skill-left2{
+    width: 45%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.skill-right2{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Article*/
+.networktitle {
+    color: #4b8adc;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.networktxt {
+    color: #f0fff8;
+    margin-left: 5%;
+}
+
+.devtitle {
+    color: #37bc9b;
+    margin-left: 15%;
+}
+.devtxt {
+    color: #f0fff8;
+    margin-left: 5%;
+}
+/*effect-underline*/
+h3 a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+/*effect-underline2*/
+a.effect-underline:after {
+    content: '';
+position: absolute;
+left: 0;
+display: inline-block;
+height: 1em;
+width: 100%;
+border-bottom: 1px solid;
+margin-top: 10px;
+opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*Progressebar color*/
 .progressblue {
-    background-color: #19f;
-}
-.progresspurple {
-    background-color: #9b59b6;
-}
-.progressorange {
-    background-color: #ffa500;
+    background-color: #4b8adc;
 }
 .progressgreen {
-    background-color: #27ae60;
+    background-color: #37bc9b;
 }
-@-webkit-keyframes progress-html {
+/*Networks*/
+@keyframes progress-centreon {
     0% {
         width: 0%;
    }
@@ -113,15 +210,7 @@
         width: 90%;
    }
 }
-@-webkit-keyframes progress-css {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 85%;
-   }
-}
-@-webkit-keyframes progress-php {
+@keyframes progress-cpt {
     0% {
         width: 0%;
    }
@@ -129,72 +218,38 @@
         width: 70%;
    }
 }
-@-webkit-keyframes progress-javascript {
+@keyframes progress-wireshark {
     0% {
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 55%;
    }
 }
-@-webkit-keyframes progress-python {
+@keyframes progress-vpn {
     0% {
         width: 0%;
    }
     100% {
-        width: 35%;
+        width: 45%;
    }
 }
-
-/* */
-@-moz-keyframes progress-html {
+@keyframes progress-powershell {
     0% {
         width: 0%;
    }
     100% {
-        width: 100%;
-   }
-}
-@-moz-keyframes progress-css {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 90%;
-   }
-}
-@-moz-keyframes progress-php {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 70%;
-   }
-}
-@-moz-keyframes progress-javascript {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 50%;
-   }
-}
-@-moz-keyframes progress-python {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 35%;
+        width: 38%;
    }
 }
 
-/* */
+/*Dev */
 @keyframes progress-html {
     0% {
         width: 0%;
    }
     100% {
-        width: 100%;
+        width: 95%;
    }
 }
 @keyframes progress-css {
