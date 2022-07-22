@@ -154,7 +154,7 @@
     margin-left: 15%;
 }
 .networktxt {
-    color: blanchedalmond;
+    color: #f0fff8;
     margin-left: 5%;
 }
 
@@ -163,10 +163,38 @@
     margin-left: 15%;
 }
 .devtxt {
-    color: blanchedalmond;
+    color: #f0fff8;
     margin-left: 5%;
 }
-/*Article*/
+/*effect-underline*/
+h3 a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+  }
+/*effect-underline2*/
+a.effect-underline:after {
+    content: '';
+position: absolute;
+left: 0;
+display: inline-block;
+height: 1em;
+width: 100%;
+border-bottom: 1px solid;
+margin-top: 10px;
+opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*Progressebar color*/
 .progressblue {
     background-color: #4b8adc;
 }
@@ -179,7 +207,7 @@
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 90%;
    }
 }
 @keyframes progress-cpt {
@@ -187,7 +215,7 @@
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 70%;
    }
 }
 @keyframes progress-wireshark {
@@ -195,7 +223,7 @@
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 55%;
    }
 }
 @keyframes progress-vpn {
@@ -203,7 +231,7 @@
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 45%;
    }
 }
 @keyframes progress-powershell {
@@ -211,7 +239,7 @@
         width: 0%;
    }
     100% {
-        width: 50%;
+        width: 38%;
    }
 }
 
@@ -221,7 +249,7 @@
         width: 0%;
    }
     100% {
-        width: 100%;
+        width: 95%;
    }
 }
 @keyframes progress-css {
