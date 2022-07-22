@@ -59,6 +59,38 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+/*Skillbar Networks*/
+.skills-bar-container li .bar-container #progress-centreon{
+    -webkit-animation-name: progress-centreon;
+    animation-name: progress-centreon;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.skills-bar-container li .bar-container #progress-cpt {
+    -webkit-animation-name: progress-cpt;
+    animation-name: progress-cpt;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.skills-bar-container li .bar-container #progress-wireshark {
+    -webkit-animation-name: progress-wireshark;
+    animation-name: progress-wireshark;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+.skills-bar-container li .bar-container #progress-vpn {
+    -webkit-animation-name: progress-vpn;
+    animation-name: progress-vpn;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+.skills-bar-container li .bar-container #progress-powershell {
+    -webkit-animation-name: progress-powershell;
+    animation-name: progress-powershell;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+/*Skillbar Dev*/
 .skills-bar-container li .bar-container #progress-html {
     -webkit-animation-name: progress-html;
     animation-name: progress-html;
@@ -89,6 +121,7 @@
     -webkit-animation-delay: 3.5s;
     animation-delay: 3.5s;
 }
+/**/
 .skills-container{
     display: flex;
 }
@@ -114,47 +147,34 @@
     justify-content: center;
     align-items: center;
 }
+/*Article*/
+.networktitle {
+    color: #4b8adc;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.networktxt {
+    color: blanchedalmond;
+    margin-left: 5%;
+}
 
-.progressred {
-    background-color: #c0392b;
+.devtitle {
+    color: #37bc9b;
+    margin-left: 15%;
 }
+.devtxt {
+    color: blanchedalmond;
+    margin-left: 5%;
+}
+/*Article*/
 .progressblue {
-    background-color: #19f;
-}
-.progresspurple {
-    background-color: #9b59b6;
-}
-.progressorange {
-    background-color: #ffa500;
+    background-color: #4b8adc;
 }
 .progressgreen {
-    background-color: #27ae60;
+    background-color: #37bc9b;
 }
-@-webkit-keyframes progress-html {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 90%;
-   }
-}
-@-webkit-keyframes progress-css {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 85%;
-   }
-}
-@-webkit-keyframes progress-php {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 70%;
-   }
-}
-@-webkit-keyframes progress-javascript {
+/*Networks*/
+@keyframes progress-centreon {
     0% {
         width: 0%;
    }
@@ -162,41 +182,7 @@
         width: 50%;
    }
 }
-@-webkit-keyframes progress-python {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 35%;
-   }
-}
-
-/* */
-@-moz-keyframes progress-html {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 100%;
-   }
-}
-@-moz-keyframes progress-css {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 90%;
-   }
-}
-@-moz-keyframes progress-php {
-    0% {
-        width: 0%;
-   }
-    100% {
-        width: 70%;
-   }
-}
-@-moz-keyframes progress-javascript {
+@keyframes progress-cpt {
     0% {
         width: 0%;
    }
@@ -204,16 +190,32 @@
         width: 50%;
    }
 }
-@-moz-keyframes progress-python {
+@keyframes progress-wireshark {
     0% {
         width: 0%;
    }
     100% {
-        width: 35%;
+        width: 50%;
+   }
+}
+@keyframes progress-vpn {
+    0% {
+        width: 0%;
+   }
+    100% {
+        width: 50%;
+   }
+}
+@keyframes progress-powershell {
+    0% {
+        width: 0%;
+   }
+    100% {
+        width: 50%;
    }
 }
 
-/* */
+/*Dev */
 @keyframes progress-html {
     0% {
         width: 0%;
