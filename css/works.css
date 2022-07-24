@@ -138,7 +138,7 @@
 
 .skill-left2{
     width: 45%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 2%;
 }
 .skill-right2{
@@ -146,6 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 /*Article*/
 .networktitle {
@@ -166,34 +167,24 @@
     color: #f0fff8;
     margin-left: 5%;
 }
-/*effect-underline*/
-h3 a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
+/*Effect title*/
+.content h3 {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
   }
-/*effect-underline2*/
-a.effect-underline:after {
-    content: '';
-position: absolute;
-left: 0;
-display: inline-block;
-height: 1em;
-width: 100%;
-border-bottom: 1px solid;
-margin-top: 10px;
-opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(0,1);
-    transform: scale(0,1);
-}
-
-a.effect-underline:hover:after {
-opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+  
+  .v8 h3 {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #f0fff8, #e9f4d7);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .v8:hover h3 {
+    background-size: 100% 100%;
+  }
 /*Progressebar color*/
 .progressblue {
     background-color: #4b8adc;
